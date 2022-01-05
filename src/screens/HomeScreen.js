@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Text, StyleSheet,View,Button,TouchableOpacity, Touchable } from 'react-native';
 
 const HomeScreen = ({ navigation }) => {
@@ -16,6 +16,10 @@ const HomeScreen = ({ navigation }) => {
     <Button
       onPress={() => navigation.navigate('Image')}
       title="Go To ImageScreen"
+    />
+    <Button
+      onPress={() => navigation.navigate('Counter')}
+      title="Go To CounterScreen"
     />
     </View>
   );
